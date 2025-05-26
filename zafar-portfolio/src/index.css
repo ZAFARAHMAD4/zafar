@@ -1,0 +1,40 @@
+body.light-mode {
+  background-color: #f8f9fa;
+  color: #212529;
+  transition: all 0.3s ease;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #f1f1f1;
+  transition: all 0.3s ease;
+}
+
+.custom-navbar {
+  background: linear-gradient(135deg, #6f42c1, #6610f2);
+  transition: background 0.3s ease;
+}
+
+body.dark-mode .custom-navbar {
+  background: linear-gradient(135deg, #212529, #343a40);
+}
+
+.navbar-brand,
+.nav-link {
+  color: white !important;
+}
+
+button.btn {
+  transition: background 0.3s ease;
+}
+
+body, html {
+  overflow-x: hidden;
+}
+
+/* Optional: reset box model and remove default margins */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
