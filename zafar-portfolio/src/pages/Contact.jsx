@@ -13,7 +13,7 @@ function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:3000/api/contact', form);
+      await axios.post('https://zafar-2.onrender.com/api/contact', form);
       setSuccess(true);
       setForm({ name: '', email: '', message: '' });
     } catch (error) {

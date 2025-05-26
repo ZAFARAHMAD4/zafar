@@ -1,0 +1,18 @@
+.skill-card {
+  min-height: 300px;
+  max-width: 300px;
+  margin: 10px auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.skill-card:hover {
+  transform: scale(1.05);
+}
+
+.card-image {
+  height: 150px;
+  object-fit: cover;
+}
+html{
+      overflow-x: hidden;
+}

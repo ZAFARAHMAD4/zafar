@@ -1,0 +1,67 @@
+.hero-section {
+  padding: 4rem 0;
+  margin-top: 56px;
+  transition: all 0.3s ease;
+}
+html{
+      overflow-x: hidden;
+}
+.hero-section.light {
+  background: linear-gradient(135deg, #0d6efd, #6610f2);
+  color: #ffffff;
+}
+
+.hero-section.dark {
+  background: linear-gradient(135deg, #1c1c1c, #2c2c2c);
+  color: #f1f1f1;
+}
+
+/* Card base */
+.hero-card {
+  border: none;
+  border-radius: 20px;
+  padding: 2rem;
+  text-align: center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+  overflow: hidden;
+  transform-origin: center;
+  will-change: transform;
+}
+
+.hero-card.light {
+  background-color: #ffffff;
+  color: #000000;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+}
+
+.hero-card.dark {
+  background-color: #333333;
+  color: #ffffff;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.6);
+}
+
+/* Zoom effect on hover */
+.hero-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Image styling */
+.hero-image {
+  width: 150px;
+  height: 450px ;
+  object-fit: cover;
+  border-radius: 20px;
+  margin: 0 auto 1rem auto;
+  transition: transform 0.5s ease;
+}
+.hero-image1 {
+  height: 450px !important;
+
+}
+
+/* Zoom image inside the card */
+.hero-card:hover .hero-image {
+  transform: scale(1.1);
+}
